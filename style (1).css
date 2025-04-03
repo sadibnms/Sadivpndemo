@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000814;
+  color: #00aaff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: #001f3f;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+nav .nav-link {
+  color: #00aaff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav .nav-link:hover {
+  color: #0077cc;
+}
+
+/* App List */
+.app-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.app {
+  background: #002b55;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.app:hover {
+  transform: scale(1.03);
+}
+
+/* Download Button */
+.download-button {
+  background: #0055aa;
+  color: white;
+  padding: 12px 15px; /* Increased padding for better mobile usability */
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background 0.3s ease-in-out;
+}
+
+.download-button:hover {
+  background: #003f7f;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  max-width: 350px;
+  transform: translate(-50%, -50%);
+  background: #001a33;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  color: white;
+  font-size: 14px;
+}
+
+.modal input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  background: #003366;
+  color: white;
+}
+
+.modal button {
+  width: 100%;
+  padding: 12px 15px; /* Better padding for touch interactions */
+  background: #0055aa;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background: #003f7f;
+}
+
+/* Close Button */
+.close {
+  color: #ff4d4d; /* Improved visibility */
+  font-size: 22px;
+  float: right;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: white;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+  .app {
+    width: 95%; /* Makes sure content adjusts better on smaller screens */
+  }
+
+  .modal {
+    width: 95%;
+    max-width: 320px;
+  }
+
+  .modal input, .modal button {
+    font-size: 14px;
+  }
+}

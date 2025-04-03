@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My App Showcase</title>
+  <link rel="stylesheet" href="style.css"> <!-- Linked to style.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Saadi Test VPN Connexion Gratuit</h1>
+    <nav>
+      <a href="#" id="login-btn" class="nav-link">Login</a>
+      <a href="#" id="signup-btn" class="nav-link">Sign Up</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="app-list">
+      <div class="app">
+        <h2>App One</h2>
+        <p>Hamza VPN Android 12 Required</p>
+        <a class="download-button" href="https://www.mediafire.com/file/shgwagud9etdk5h/Hamza_VPN_1.3.2.apk/file" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+      </div>
+
+      <div class="app">
+        <h2>App Two</h2>
+        <p>Djezzy App 2G Gratuit</p>
+        <a class="download-button" href="https://www.mediafire.com/download/3velra1el8gh701" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+      </div>
+
+      <div class="app">
+        <h2>App Three</h2>
+        <p>SkyVPN 500 MB</p>
+        <a class="download-button" href="https://www.skyvpn.net/mb/" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My App Showcase. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Login Modal -->
+  <div class="modal" id="login-modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('login-modal')">&times;</span>
+      <h2>Login</h2>
+      <form id="login-form">
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Sign Up Modal -->
+  <div class="modal" id="signup-modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('signup-modal')">&times;</span>
+      <h2>Sign Up</h2>
+      <form id="signup-form">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="main.js"></script> <!-- Linked to main.js -->
+</body>
+</html>
